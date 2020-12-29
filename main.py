@@ -41,8 +41,8 @@ loss = 0.00
 #Simulation
 for i in range(N_ini,N):
 
-  K = 100 #10 * pow(i,2)
-  P = 10 #20 + 2 * (i//10 - 1)
+  K = 10 * pow(i,2)
+  P = 20 + 2 * (i//10 - 1)
 
   phi = generate.phi(K)
   input = generate.input(i)
